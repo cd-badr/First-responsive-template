@@ -1,0 +1,281 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.check {
+    display: none;
+}
+
+.label {
+    display: none;
+}
+
+.label2 {
+    display: none;
+}
+
+nav {
+    background-color: rgba(44,62,80,255);
+    color: white;
+    padding: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav>div { 
+    display: flex;
+    column-gap: 25px;
+}
+
+nav>a , nav>div>a{
+    color: white;
+    text-decoration: none;
+    font-weight:bold ;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+/* sec-1 */
+
+.sec-1 {
+    background-color: rgba(220,53,69,255);
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.sec-1>h1 , .sec-2>h1 , .sec-3>h1 ,
+.sec-4>h1{
+    font-size: 45px;
+}
+
+/* sec-2 */
+
+.sec-2 {
+    color: rgba(44,62,80,255);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.port-pics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 600px;
+    gap: 25px;
+}
+.port-pics>img {
+    width: 165px;
+    border-radius: 10px 10px 10px;
+}
+
+/* sec-3 */
+
+.sec-3 {
+    background-color: rgba(220,53,69,255);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.sec-3-about {
+    display: flex;
+    gap: 20px;
+}
+
+/* sec-4 */
+
+.sec-4 {
+    color: rgba(44,62,80,255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.formul {
+    color: rgba(0, 0, 0, 0.491);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.formul>label>input , .formul>label>textarea {
+    width: 50vw;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.182);  ;
+}
+
+button {
+    width: 70px;
+    height: 50px;
+    background-color: rgba(220,53,69,255);
+    color: white;
+    border: none;
+    border-radius: 5px 5px 5px;
+}
+
+/* footer */
+
+footer {
+    color: white;
+}
+
+.bg-1 {
+    background-color: rgba(44,62,80,255);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 50px;  
+}
+
+.sc-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sc-media>a>i {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 45%;
+}
+
+.bg-1>div>p>span {
+    color: rgb(5, 134, 91);
+}
+
+.bg-2 {
+    background-color: rgba(26,37,47,255);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+
+@media (max-width: 426px) {
+    body {
+        font-size: 17px;
+    }
+
+    .tele-nav {
+        width: 100vw;
+        height: 50px;
+        background-color: rgba(44,62,80,255);
+    }
+    .check {
+        position:sticky;
+        position: absolute;
+        right: 0%;
+        height: 50px;
+        width: 50px;
+    }
+
+    .label {
+        display: flex;
+        position: absolute;
+        right: 0%;
+        font-size: 50px;
+        margin-right: 10px;
+    }
+
+    .label2 {
+        display:flex;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        font-size: 50px;
+        margin-right: 10px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        height: 100vh;
+        width: 89vw;
+        left: -150%;
+        transition: 0.5s;
+    }
+
+    nav>div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .check:checked ~ nav {
+        left: 0%;
+    }
+
+
+    .port-pics {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        gap: 25px;
+    }
+
+    .port-pics>img {
+        width: 300px;
+    }
+
+    .sec-3-about {
+        flex-direction: column;
+    }
+
+    .formul>label>input , .formul>label>textarea {
+        height: 30px;
+        width: 70vw;
+    }
+    
+    button {
+        position: relative;
+        margin: 0% auto;
+        width: 120px;
+        height: 60px;
+        font-size: large;
+    }
+
+
+    .bg-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .bg-1 {
+        text-align: center;
+    }
+
+}
